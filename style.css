@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;1,200&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(43, 42, 42);
+}
+
+:root{
+    --var-orange: rgb(255, 115, 0);
+    --var-dark: rgb(59, 57, 57);
+    --var-light: #ffff;
+    --var-shadow: 0 0 5px rgb(86 80 77);
+}
+
+/*--------Home style starts--------*/
+
+.header-section {
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--var-dark);
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.header-section a{
+    text-decoration: none;
+}
+.header-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--var-light);
+}
+.header-logo .heading{
+    font-family: 'Pacifico', cursive;
+}
+.header-logo span {
+    color: var(--var-orange);
+}
+.header-menu {
+    text-align: right;
+}
+.header-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-menu ul li {
+    padding: 0 15px;
+}
+.header-menu ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--var-light);
+    transition: .3s;
+}
+.header-menu ul li a:hover{
+    color: var(--var-orange);
+}
+.menu-icon, .cancel-icon{
+    font-size: 18px;
+    color: var(--var-light);
+    display: none;
+}
+
+/*-----------main section----------*/
+.main-section{
+    background-color: var(--var-dark);
+    padding: 40px 0;
+    position: relative;
+    z-index: 2;
+    border-bottom: 10px solid rgb(86 80 77);
+    box-shadow: 0 0 10px rgb(86 80 77);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.main-content h4 {
+    text-transform: capitalize;
+    color: var(--var-orange);
+    font-size: 18px;
+}
+.main-content h4 span{
+    color: var(--var-light);
+}
+.main-content h1 span{
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    color: var(--var-orange);
+}
+.main-content h1 {
+    font-size: 35px;
+    color: var(--var-light);
+    font-weight: bold;
+    padding-top: 5px;
+}
+.main-content p {
+    font-size: 20px;
+    color: var(--var-light);
+    text-transform: capitalize;
+}
+a.main-btn {
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--var-light);
+    text-transform: capitalize;
+    box-shadow: var(--var-shadow);
+    border-radius: 20px;
+    transition: .3s;
+}
+a.main-btn:hover{
+    color: var(--var-orange);
+}
+.main-image img {
+    width: 298px;
+    height: 310px;
+    border: 10px solid rgb(86 80 77);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(86 80 77);
+    padding: 5px;
+}
+.main-image {
+    text-align: center;
+}
+.main-item {
+    padding: 48px 0;
+}
+.main-content {
+    text-align: center;
+    padding-top: 48px;
+}
+.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+/*--------Home style ends--------*/
+
+/*--------About style starts-------*/
+.about-section {
+    background-color: var(--var-dark);
+    padding: 80px 0;
+    padding-bottom: 50px;
+    border: 1px solid gray;
+    border-bottom-right-radius: 50%;
+}
+.about-header {
+    text-align: center;
+    padding-bottom: 0;
+}
+.about-header h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: var(--var-orange);
+}
+.about-header p {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: var(--var-light);
+}
+.about-header p::after {
+    position: absolute;
+    bottom: 10px;
+    left: -42px;
+    height: 3px;
+    width: 38px;
+    content: "";
+    background: var(--var-orange);
+    border-radius: 5px;
+}
+.about-header p::before {
+    position: absolute;
+    top: 13px;
+    right: -42px;
+    height: 3px;
+    width: 38px;
+    background: var(--var-orange);
+    content: "";
+    border-radius: 5px; 
+}
+.about-image{
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+.about-image::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    content: "";
+    border-top: 3px solid var(--var-orange);
+    border-left: 3px solid var(--var-orange);
+}
+.about-image::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    content: "";
+    border-bottom: 3px solid var(--var-orange);
+    border-right: 3px solid var(--var-orange);
+}
+.about-image img {
+    width: 60%;
+    border: 10px solid rgb(86 80 77);
+    box-shadow: 0 0 10px rgb(86 80 77);
+    padding: 5px;
+    border-radius: 10px;
+}
+.about-content h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--var-light);
+}
+.about-content h2 span {
+    font-size: 20px;
+    color: var(--var-orange);
+}
+.about-content p {
+    font-size: 16px;
+    color: var(--var-light);
+}
+a.about-btn {
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: var(--var-shadow);
+    color: var(--var-light);
+    transition: .3s;
+    border-radius: 20px;
+}
+a.about-btn:hover{
+    color: var(--var-orange);
+}
+.about-content {
+    padding: 40px;
+}
+
+/*--------About style ends-------*/
+
+/*--------My-skill style starts-------*/
+.skill-section {
+    background-color: var(--var-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid gray;
+    border-bottom-left-radius: 40%;
+    /* border-top-right-radius: 40%; */
+}
+.skill-header {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.skill-header h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: var(--var-orange);
+}
+.skill-header p {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: var(--var-light);
+}
+.skill-header p::after {
+    position: absolute;
+    bottom: 10px;
+    left: -42px;
+    height: 3px;
+    width: 38px;
+    content: "";
+    background: var(--var-orange);
+    border-radius: 5px;
+}
+.skill-header p::before {
+    position: absolute;
+    top: 13px;
+    right: -42px;
+    height: 3px;
+    width: 38px;
+    background: var(--var-orange);
+    content: "";
+    border-radius: 5px; 
+}
+.skill-content{
+    margin-bottom: 45px;
+}
+.skill-content h2 span{
+    color: var(--var-orange);
+}
+.skill-content h2 {
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.skill-content p {
+    font-size: 16px;
+    color: white;
+    padding-top: 20px;
+    line-height: 26px;
+}
+.skill-content {
+    padding: 20px;
+}
+.skill-bar h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.barfiller {
+    border-radius: 20px;
+}
+a.skill-btn {
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: var(--var-shadow);
+    color: var(--var-light);
+    transition: .3s;
+    border-radius: 20px;
+}
+a.skill-btn:hover{
+    color: var(--var-orange);
+}
+.barfiller .tip:after{
+    display: none;
+}
+
+/*--------My-skill style ends-------*/
+
+
+/*--------Our-services style starts-------*/
+
+.services-section{
+    background-color: var(--var-dark);
+    padding: 25px 0;
+    padding-bottom: 40px;
+}
+.services-header {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.services-header h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: var(--var-orange);
+}
+.services-header p {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: var(--var-light);
+}
+.services-header p::after {
+    position: absolute;
+    bottom: 10px;
+    left: -42px;
+    height: 3px;
+    width: 38px;
+    content: "";
+    background: var(--var-orange);
+    border-radius: 5px;
+}
+.services-header p::before {
+    position: absolute;
+    top: 13px;
+    right: -42px;
+    height: 3px;
+    width: 38px;
+    background: var(--var-orange);
+    content: "";
+    border-radius: 5px; 
+}
+.services-item {
+    text-align: center;
+    padding: 20px;
+    box-shadow: var(--var-shadow);
+    margin-top: 15px;
+    transition: .3s;
+}
+.services-item:hover{
+    margin-top: 10px;
+}
+.services-item i {
+    font-size: 1.5rem;
+    color: white;
+    height: 50px;
+    width: 50px;
+    background: var(--var-dark);
+    line-height: 46px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: var(--var-shadow);
+    transition: .5s;
+}
+.services-item i:hover{
+    color: var(--var-orange);
+}
+.services-item h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--var-orange);
+    padding-top: 10px;
+}
+.services-item p {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--var-light);
+    padding-top: 10px;
+}
+
+/*-------Lastwork style starts---------*/
+.lastwork-section{
+    background-color: var(--var-dark);
+    padding-bottom: 100px;
+    border-radius: 20%;
+}
+.lastwork-header {
+    text-align: center;
+    padding: 50px;
+}
+.lastwork-header h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: var(--var-orange);
+}
+.lastwork-header p {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: var(--var-light);
+}
+.lastwork-header p::after {
+    position: absolute;
+    bottom: 10px;
+    left: -42px;
+    height: 3px;
+    width: 38px;
+    content: "";
+    background: var(--var-orange);
+    border-radius: 5px;
+}
+.lastwork-header p::before {
+    position: absolute;
+    top: 13px;
+    right: -42px;
+    height: 3px;
+    width: 38px;
+    background: var(--var-orange);
+    content: "";
+    border-radius: 5px; 
+}
+.lastwork-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.lastwork-link {
+    margin-bottom: 50px;
+}
+.lastwork-link{
+    text-align: center;
+}
+.lastwork-link ul li {
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--var-light);
+    text-transform: capitalize;
+    box-shadow: var(--var-shadow);
+    border-radius: 20px;
+    transition: .3s;
+    cursor: pointer;
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+}
+.lastwork-link ul li:hover{
+    color: var(--var-orange);
+}
+.bg-1{background-image: url(img/genoa.PNG);}
+.bg-2{background-image: url(img/mablogs.PNG);}
+.bg-3{background-image: url(img/mafashion.PNG);}
+.bg-4{background-image: url(img/dukamarket.PNG);}
+.bg-5{background-image: url(img/mtbiking.PNG);}
+.bg-6{background-image: url(img/surprice.PNG);}
+.bg-7{background-image: url(img/car-blogs.PNG);}
+.lastwork-background {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.lastwork-item {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    padding: 20px;
+    border: 10px solid rgb(86 80 77);
+    box-shadow: 0 0 5px rgb(86 80 77);
+    border-radius: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: table;
+    transform: scale(.8);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.lastwork-item:hover .overlay{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.overlay::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: black;
+    z-index: -1;
+    opacity: .5;
+    border-radius: 10px;
+}
+.overlay .overlay-text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.overlay a {
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: var(--var-shadow);
+    color: var(--var-light);
+    transition: .3s;
+    border-radius: 20px;
+    background-color: var(--var-dark);
+}
+/*--------Our-services style ends-------*/
+
+/*--------Contact style starts----------*/
+.contact-section{
+    background-color: var(--var-dark);
+    padding-bottom: 50px;
+    border-radius: 20%;
+}
+.contact-header {
+    text-align: center;
+    padding: 50px;
+}
+.contact-header h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+    color: var(--var-orange);
+}
+.contact-header p {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: var(--var-light);
+}
+.contact-header p::after {
+    position: absolute;
+    bottom: 10px;
+    left: -42px;
+    height: 3px;
+    width: 38px;
+    content: "";
+    background: var(--var-orange);
+    border-radius: 5px;
+}
+.contact-header p::before {
+    position: absolute;
+    top: 13px;
+    right: -42px;
+    height: 3px;
+    width: 38px;
+    background: var(--var-orange);
+    content: "";
+    border-radius: 5px; 
+}
+.contact-item h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--var-orange);
+}
+.contact-item p {
+    font-size: 16px;
+    color: var(--var-light);
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+.contact-item a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--var-light);
+    padding: 12px 0;
+}
+.contact-item i {
+    font-size: 20px;
+    color: var(--var-orange);
+    padding-right: 15px;
+}
+.contact-item h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--var-orange);
+}
+.contact-link a {
+    width: 35px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+.contact-link {
+    text-align: center;
+}
+.contact-link a i {
+    display: inline-block;
+    padding: 11px;
+    background: var(--var-dark);
+    border-radius: 50px;
+    border: 3px solid rgb(86 80 77);
+    box-shadow: 0 0 10px rgb(86 80 77);
+    color: var(--var-orange); 
+    transition: .3s;
+}
+.contact-link a i:hover{
+    color: var(--var-light);
+}
+.contact-item h4 span {
+    display: block;
+    font-size: 80%;
+    color: var(--var-light);
+}
+.contact-item{
+    padding: 30px;
+    border: 2px solid rgb(86 80 77);
+    box-shadow: 0 0 10px rgb(86 80 77);
+    border-radius: 10px;
+}
+.contact-form h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--var-orange);
+}
+.contact-form input {
+    width: 100%;
+    border: none;
+    height: 45px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 2px solid rgb(86 80 77);
+    box-shadow: 0 0 10px rgb(86 80 77);
+    background-color: var(--var-dark);
+    color: var(--var-light);
+}
+.contact-form textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+    border: 2px solid rgb(86 80 77);
+    box-shadow: 0 0 10px rgb(86 80 77);
+    background-color: var(--var-dark);
+    color: var(--var-light);
+}
+input[type="submit"] {
+    width: 150px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--var-light);
+    background-color: var(--var-dark);
+    transition: .5s;
+    box-shadow: var(--var-shadow)
+}
+input[type="submit"]:hover{
+    color: var(--var-orange);
+}
+
+/*--------Contact style ends----------*/
+
+/*--------Copyright style starts----------*/
+
+.copyright-section {
+    padding: 20px;
+    border-top: 1px solid rgb(107, 104, 104);
+    background: var(--var-dark);
+}
+.copyright-text p {margin: 0;
+    color: var(--var-light);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.copyright-text {
+    margin: 0 auto;
+    text-align: center;
+}
+.copyright-text p span{
+    color: var(--var-orange);
+    cursor: pointer;
+}
+
+/*--------Copyright style ends----------*/
+
+/*--------Scroll to top style starts----------*/
+.material-scrolltop{
+    background-color: var(--var-orange);
+    color: var(--var-light);
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+.material-scrolltop:hover{
+    background-color: var(--var-light);
+    color: var(--var-orange);
+}
+/*--------Scroll to top style ends----------*/
+
+
+
+
+/*---------responsive design-------*/
+@media(max-width: 991px){
+    .about-content {
+        padding-top: 80px;
+    }
+    .about-image img{
+        width: 100%;
+    }
+    .skill-content{
+        padding: 0 10px;
+    }
+    .skill-item {
+        padding-top: 30px;
+    }
+    .lastwork-item {
+        margin-top: 30px;
+    }
+    .contact-form {
+        margin-top: 80px;
+    }
+    .services-item {
+        margin-top: 30px;
+    }
+}
+@media(max-width: 768px){
+    .header-section{
+        padding: 0 20px;
+    }
+    .header-logo{
+        flex: 2;
+        text-align: center;
+    }
+    .header-menu  ul{
+        position: fixed;
+        top: 70px;
+        width: 50%;
+        left: -100%;
+        height: 100%;
+        background-color: var(--var-dark);
+        display: inline-block;
+        text-align: center;
+        padding-top: 40px;
+        z-index: 99;
+        transition: .5s;
+    }
+    .header-menu  ul.active{
+        left: 0%;
+    }
+    .header-menu ul li{
+        line-height: 50px;
+        margin-top: 10px;
+    }
+    .header-menu ul li a{
+        padding: 10px 40px;
+        box-shadow: var(--var-shadow);
+        border-radius: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .cancel-icon.show{
+        display: block;
+    }
+    .main-section{
+        padding: 0;
+    }
+    .main-item{
+        padding: 15px;
+    }
+    .about-header{
+        padding-bottom: 20px;
+    }
+    .services-header, .lastwork-header, .contact-header{
+        padding: 20px 0;
+    }
+    
+}
+
+@media(max-width: 576px){
+    .header-menu  ul{
+        width: 90%;
+    }
+}
+
+@media(max-width: 350px){
+    .main-image img {
+        width: 200px;
+        height: 220px;
+    }
+}
